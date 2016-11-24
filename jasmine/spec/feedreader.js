@@ -9,18 +9,20 @@ $(function() {
         });
 
         //Checks all url properties are defined and not empty
-         allFeeds.forEach(function(allFeeds){
-           it('have URLs', function() {
-             expect(allFeeds.url).toBeDefined();
-             expect(allFeeds.url.length).not.toBe(0);
+        it('have URLs', function() {
+            allFeeds.forEach(function(allFeeds){
+                expect(allFeeds.url).toBeDefined();
+                expect(allFeeds.url.length).not.toBe(0);
            });
-
+         });
          //Checks all name properties are defined and not empty
-          it('have names', function() {
-            expect(allFeeds.name).toBeDefined();
-            expect(allFeeds.name.length).not.toBe(0);
+         it('have names', function() {
+            allFeeds.forEach(function(allFeeds){
+                expect(allFeeds.url).toBeDefined();
+                expect(allFeeds.url.length).not.toBe(0);
            });
-       });
+         });
+       
     });
 
 
